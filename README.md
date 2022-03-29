@@ -1,6 +1,6 @@
 # WpfPaint
 Simple shape creator demonstrating WPF framework. Works as a dekstop application on Windows.
-## Posibilities
+## Possibilities
 - Draw a rectangle or an ellipse and set its color
 - Two languages: Polish or English
 - Export canvas to .png
