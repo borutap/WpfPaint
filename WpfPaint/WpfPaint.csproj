@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\poland.png" />
+    <None Remove="img\united-kingdom.png" />
+    <None Remove="Paint.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\poland.png" />
+    <Resource Include="img\united-kingdom.png" />
+    <Resource Include="Paint.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource1.en-GB.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.en-GB.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource1.en-GB.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
